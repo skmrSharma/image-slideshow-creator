@@ -5,8 +5,8 @@ body {
 }
 
 .the-show {
-	width: 700px;
-	height: 400px;
+	width: 75vw;
+	height: 70vh;
 	/*overflow: visible;*/
 	overflow: hidden;
 	position: absolute;
