@@ -19,15 +19,6 @@ for (var i = 1; i <= imageList.length; i++) {
 $(".the-slides").css("width", 100*imageList.length+"%");
 $(".slide").css("width", 100/imageList.length+"%");
 $("#r1").prop("checked", true);
-//console.log($("#r1").prop("checked"));
-//$("#r1:checked ~ .s1").css("margin-left", 0);
-//$("#r2:checked ~ .s1").css("margin-left", -25+"%");
-//$("#r2:checked ~ .s1").hide();
-//$("#r3:checked ~ .s1").css("margin-left", -50+"%");
-//$("#r4:checked ~ .s1").css("margin-left", -75+"%");
-//$(".s1").hide();
-//$("input[type='radio']:checked").
-//console.log($("input[type='radio']:checked").attr('name'));
 
 $("input[type='radio']").change(function(){
 	var radioId = $("input[type='radio']:checked").attr('id');
