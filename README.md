@@ -1,6 +1,7 @@
 # image-slideshow
 An easy and fast HTML/CSS slideshow creator for your images powered by jQuery. 
-
+View images in your browser itself.
+ 
 Only a modern browser is required !!
 
 ## Usage
