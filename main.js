@@ -1,7 +1,10 @@
 var imageList = image_file_list;
-console.log(imageList);
-console.log(imageList.length);
-var inputButtons = "";
+//console.log(imageList);
+//console.log(imageList.length);
+if(imageList.length > 21){
+	alert("Too many images !! Reduce the number of images");
+	window.open("", "_self").close();	// open a blank window (replacing current one) and then close it
+}
 for (var i = 1; i <= imageList.length; i++) {
 	$(".the-slides").prepend("<input type=\"radio\" name=\"r\" id=\"r"+i+"\">");
 }
@@ -28,8 +31,8 @@ $("#r1").prop("checked", true);
 
 $("input[type='radio']").change(function(){
 	var radioId = $("input[type='radio']:checked").attr('id');
-	console.log(radioId);
+	//console.log(radioId);
 	var radioIdNum = +(radioId.slice(1));
-	console.log(radioIdNum);	
+	//console.log(radioIdNum);	
 	$("#"+radioId+":checked ~ .s1").css("margin-left", -((radioIdNum-1)*100/imageList.length)+"%");
 });

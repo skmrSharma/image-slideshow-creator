@@ -5,9 +5,9 @@ body {
 }
 
 .the-show {
-	width: 75vw;
-	height: 70vh;
-	/*overflow: visible;*/
+	/* change width and height to resize image display area */ 
+	width: 100vw;
+	height: 100vh;
 	overflow: hidden;
 	position: absolute;
 	top: 50%;
@@ -17,6 +17,7 @@ body {
 
 .navigation {
 	position: absolute;
+	/* change bottom to lower values to shift the buttons further down */
 	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -52,4 +53,5 @@ input[name='r'] {
 .slide img {
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
